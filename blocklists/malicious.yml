@@ -1,0 +1,12 @@
+title: Example Blocklist
+description: This is an example blocklist specification
+version: 1.2
+entries:
+  - pattern: example.com
+    redirect: https://example.org
+    message: This site is blocked because it is harmful.
+  - pattern: *.badsite.com
+    message: This site is blocked because it is on a blocklist.
+  - pattern: ^www\.9minecraft\.net\/(.*)\/$
+    redirect: https://legacy.curseforge.com/minecraft/mc-mods/search?search=$1
+    message: This site is blocked because it is harmful. You will be redirected to a safer site.
